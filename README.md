@@ -21,4 +21,4 @@ to be continued...
 - **__f__** is the number of resources found during a search operation
 
 
-<img src="/img/complexity.png" height="300px" ></img>
+<img src="/img/complexity.jpg" height="300px" ></img>
