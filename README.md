@@ -11,8 +11,14 @@ The root of the tree is conventionally a directory, called the root directory. O
 The program that implements the filesystem will receive a diary of the actions to be performed from the standard input and will print the result of the same on standard output. The program must be implemented in standard C, uniquely with the help of the standard library (libc) and the basic runtime. The runtime of the program consists on reading a line of the diary of the actions, and performing the corresponding action on the internal representation of the filesystem maintained by it, and writing the result to standard output before proceeding to the next action (execution of actions is completely sequential).
 
 ##Commands
-to be continued
+to be continued...
 
 ##Complexity constraints
 
-<img src="/src/main/resources/img/complexity.png" height="300px" ></img>
+- **__l__** is the path length
+- **__d__** is the number of resources in the system
+- **__d_path__** the number of children's resources of the specified one
+- **__f__** is the number of resources found during a search operation
+
+
+<img src="/img/complexity.png" height="300px" ></img>
