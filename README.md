@@ -10,10 +10,10 @@ The hierarchical filesystem organizes the resources according to a tree structur
 The root of the tree is conventionally a directory, called the root directory. Only file nodes can contain data, represented as a sequence of bytes, while directories have no associated data. All tree nodes can contain metadata, but for the purposes of this project, only the directories contain them. The metadata of the directory are the names of its direct descendants.
 The program that implements the filesystem will receive a diary of the actions to be performed from the standard input and will print the result of the same on standard output. The program must be implemented in standard C, uniquely with the help of the standard library (libc) and the basic runtime. The runtime of the program consists on reading a line of the diary of the actions, and performing the corresponding action on the internal representation of the filesystem maintained by it, and writing the result to standard output before proceeding to the next action (execution of actions is completely sequential).
 
-##Commands
+## Commands
 to be continued...
 
-##Complexity constraints
+## Complexity constraints
 
 - **__l__** is the path length
 - **__d__** is the number of resources in the system
