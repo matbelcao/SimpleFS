@@ -11,16 +11,17 @@ The hierarchical filesystem organizes the resources according to a tree structur
 The root of the tree is conventionally a directory, called the root directory. Only file nodes can contain data, represented as a sequence of bytes, while directories have no associated data. All tree nodes can contain metadata, but for the purposes of this project, only the directories contain them. The metadata of the directory are the names of its direct descendants.
 The program that implements the filesystem will receive a diary of the actions to be performed from the standard input and will print the result of the same on standard output. The program must be implemented in standard C, uniquely with the help of the standard library (libc) and the basic runtime. The runtime of the program consists on reading a line of the diary of the actions, and performing the corresponding action on the internal representation of the filesystem maintained by it, and writing the result to standard output before proceeding to the next action (execution of actions is completely sequential).
 
-<<<<<<< HEAD
 
 ## Commands
 The filesystem paths are represented with the usual **__UNIX syntax__**: a path is therefore the sequence of resource names that from the root directory reaches the resource identified by the path. The names are separated by the path separator character **__/__**).
 For example, let's consider the following filesystem:
+
 <br/>
 <center><img src="/img/filesystem.jpg" height="200px"></img></center>
 <br/>
+
 The path that identifies the resource file0 is _/file0_, the one that identifies file3 is _/dir2/file3_.
-The following __restrictions__ apply:
+The following __restrictions__ are applied:
 - Resource names are alphanumeric and can be up to 255 characters long
 - The maximum height of the tree is 255
 - The maximum number of children of a node is 1024
@@ -38,16 +39,12 @@ __Example__: _write /poems /jabberwocky "It was brillig and the slithy toves"_
 - `exit` : Terminates the resource manager execution. Doesn't print anything in output.
 
 
-=======
-## Commands
-to be continued...
-
->>>>>>> 4e54b96ffe61ac37fa23ae1488edcea3823d5660
 ## Complexity constraints
 
 - **__l__** is the path length
 - **__d__** is the number of resources in the system
 - **__d_path__** the number of children's resources of the specified one
 - **__f__** is the number of resources found during a search operation
-<br/><br/>
+
+<br/>
 <center><img src="/img/complexity.jpg" height="250px" ></img><center>
